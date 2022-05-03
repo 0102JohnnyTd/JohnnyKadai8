@@ -13,6 +13,8 @@
 		1CE8AE9D2821E42800872075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE8AE9B2821E42800872075 /* Main.storyboard */; };
 		1CE8AE9F2821E42B00872075 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CE8AE9E2821E42B00872075 /* Assets.xcassets */; };
 		1CE8AEA22821E42B00872075 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE8AEA02821E42B00872075 /* LaunchScreen.storyboard */; };
+		1CE8AEAA2821E56200872075 /* A.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE8AEA92821E56200872075 /* A.storyboard */; };
+		1CE8AEAC2821E56A00872075 /* B.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CE8AEAB2821E56A00872075 /* B.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1CE8AE9E2821E42B00872075 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CE8AEA12821E42B00872075 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CE8AEA32821E42B00872075 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CE8AEA92821E56200872075 /* A.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = A.storyboard; sourceTree = "<group>"; };
+		1CE8AEAB2821E56A00872075 /* B.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = B.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				1CE8AE972821E42800872075 /* SceneDelegate.swift */,
 				1CE8AE992821E42800872075 /* ViewController.swift */,
 				1CE8AE9B2821E42800872075 /* Main.storyboard */,
+				1CE8AEA92821E56200872075 /* A.storyboard */,
+				1CE8AEAB2821E56A00872075 /* B.storyboard */,
 				1CE8AE9E2821E42B00872075 /* Assets.xcassets */,
 				1CE8AEA02821E42B00872075 /* LaunchScreen.storyboard */,
 				1CE8AEA32821E42B00872075 /* Info.plist */,
@@ -125,7 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CE8AEAA2821E56200872075 /* A.storyboard in Resources */,
 				1CE8AEA22821E42B00872075 /* LaunchScreen.storyboard in Resources */,
+				1CE8AEAC2821E56A00872075 /* B.storyboard in Resources */,
 				1CE8AE9F2821E42B00872075 /* Assets.xcassets in Resources */,
 				1CE8AE9D2821E42800872075 /* Main.storyboard in Resources */,
 			);
