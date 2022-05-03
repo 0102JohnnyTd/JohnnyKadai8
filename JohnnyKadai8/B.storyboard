@@ -14,8 +14,30 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="mse-if-Ot1">
+                                <rect key="frame" x="32" y="76" width="350" height="94"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OK8-4s-6jM">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-3a-foU">
+                                        <rect key="frame" x="-2" y="64" width="354" height="31"/>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" red="0.83216959239999999" green="0.98548370600000001" blue="0.47333085539999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mse-if-Ot1" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" priority="249" constant="32" id="Bij-N8-Slg"/>
+                            <constraint firstItem="mse-if-Ot1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="hen-jC-yUq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="mse-if-Ot1" secondAttribute="trailing" constant="32" id="nhg-C6-PbQ"/>
+                            <constraint firstItem="mse-if-Ot1" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="32" id="tj2-nc-pRf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="B" image="swift" catalog="system" id="UUR-9J-FPb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
