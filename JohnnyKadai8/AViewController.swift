@@ -7,8 +7,7 @@
 
 import UIKit
 
-class AViewController: UIViewController {
-
+final class AViewController: UIViewController {
     @IBOutlet private weak var valueLabelA: UILabel!
 
     @IBOutlet private weak var sliderA: UISlider!
