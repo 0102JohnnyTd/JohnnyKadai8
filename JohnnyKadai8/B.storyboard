@@ -26,6 +26,9 @@
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-3a-foU">
                                         <rect key="frame" x="-2" y="64" width="354" height="31"/>
+                                        <connections>
+                                            <action selector="getSliderValue:" destination="Y6W-OH-hqX" eventType="valueChanged" id="Xlu-3o-BcO"/>
+                                        </connections>
                                     </slider>
                                 </subviews>
                             </stackView>
@@ -42,8 +45,8 @@
                     <tabBarItem key="tabBarItem" title="B" image="swift" catalog="system" id="UUR-9J-FPb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="sliderB" destination="yGB-3a-foU" id="2d5-gJ-ptC"/>
-                        <outlet property="valueLabelB" destination="OK8-4s-6jM" id="FiY-UO-7d2"/>
+                        <outlet property="sliderB" destination="yGB-3a-foU" id="vUZ-UF-xpe"/>
+                        <outlet property="valueLabelB" destination="OK8-4s-6jM" id="0om-fZ-Hmx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
