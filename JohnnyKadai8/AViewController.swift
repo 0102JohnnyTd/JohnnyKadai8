@@ -7,28 +7,29 @@
 
 import UIKit
 
-protocol CustomSliderDelegate {
-    func passToSliderValue(slider: UISlider)
-}
-
 final class AViewController: UIViewController {
     @IBOutlet private weak var valueLabelA: UILabel!
 
     @IBOutlet private weak var sliderA: UISlider!
 
-    @IBAction func changeSliderValue(_ sender: Any) {
-        valueLabelA.text = "\(sliderA.value)"
-        delegate?.passToSliderValue(slider: sliderA)
+    @IBAction private func changeSliderValue(_ sender: Any) {
+        showSliderValue()
+        slidersData.recieveValue(sliderValue: sliderA.value)
     }
 
-    var delegate: CustomSliderDelegate?
+    private let slidersData = SlidersData.shared
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        getSliderValue()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        recieveSlidersDataValue()
+        showSliderValue()
     }
 
-    private func getSliderValue() {
+    private func recieveSlidersDataValue() {
+        sliderA.value = slidersData.value
+    }
+
+    private func showSliderValue() {
         valueLabelA.text = "\(sliderA.value)"
     }
 }

@@ -13,19 +13,23 @@ final class BViewController: UIViewController {
     @IBOutlet private weak var sliderB: UISlider!
 
     @IBAction private func getSliderValue(_ sender: Any) {
+        showSliderValue()
+        slidersData.recieveValue(sliderValue: sliderB.value)
+    }
+
+    private let slidersData = SlidersData.shared
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        recieveSlidersDataValue()
+        showSliderValue()
+    }
+
+    private func recieveSlidersDataValue() {
+        sliderB.value = slidersData.value
+    }
+
+    private func showSliderValue() {
         valueLabelB.text = "\(sliderB.value)"
-    }
-
-    private let viewControllerA = UIStoryboard(name: "A", bundle: nil).instantiateViewController(withIdentifier: "A") as! AViewController
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        viewControllerA.delegate = self
-    }
-}
-
-extension BViewController: CustomSliderDelegate {
-    func passToSliderValue(slider: UISlider) {
-        sliderB.value = slider.value
     }
 }
