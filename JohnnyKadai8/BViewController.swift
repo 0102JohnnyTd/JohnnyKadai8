@@ -8,13 +8,13 @@
 import UIKit
 
 final class BViewController: UIViewController {
-    @IBOutlet private weak var valueLabelB: UILabel!
+    @IBOutlet private weak var valueLabel: UILabel!
 
-    @IBOutlet private weak var sliderB: UISlider!
+    @IBOutlet private weak var slider: UISlider!
 
     @IBAction private func getSliderValue(_ sender: Any) {
         showSliderValue()
-        slidersData.recieveValue(sliderValue: sliderB.value)
+        slidersData.saveValue(sliderValue: slider.value)
     }
 
     private let slidersData = SlidersData.shared
@@ -26,10 +26,10 @@ final class BViewController: UIViewController {
     }
 
     private func recieveSlidersDataValue() {
-        sliderB.value = slidersData.value
+        slider.value = slidersData.value
     }
 
     private func showSliderValue() {
-        valueLabelB.text = "\(sliderB.value)"
+        valueLabel.text = "\(slider.value)"
     }
 }
