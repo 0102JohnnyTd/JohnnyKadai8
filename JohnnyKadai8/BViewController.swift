@@ -14,7 +14,7 @@ final class BViewController: UIViewController {
 
     @IBAction private func getSliderValue(_ sender: Any) {
         showSliderValue()
-        slidersData.recieveValue(sliderValue: slider.value)
+        slidersData.saveValue(sliderValue: slider.value)
     }
 
     private let slidersData = SlidersData.shared

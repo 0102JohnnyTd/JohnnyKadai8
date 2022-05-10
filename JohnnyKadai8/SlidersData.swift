@@ -9,7 +9,7 @@ import Foundation
 
 final class SlidersData {
     private(set) var value: Float = 0
-
+ 
     func saveValue(sliderValue: Float) {
         value = sliderValue
     }
