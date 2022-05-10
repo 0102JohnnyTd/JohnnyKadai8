@@ -8,7 +8,7 @@
 import Foundation
 
 final class SlidersData {
-    var value: Float = 0
+    private(set) var value: Float = 0
 
     func recieveValue(sliderValue: Float) {
         value = sliderValue
