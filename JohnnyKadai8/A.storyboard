@@ -45,8 +45,8 @@
                     <tabBarItem key="tabBarItem" title="A" image="swift" catalog="system" id="Pq7-yS-0Hl"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="sliderA" destination="XYa-Gj-huy" id="M0h-1n-6jk"/>
-                        <outlet property="valueLabelA" destination="BzG-G7-neb" id="Q6V-fK-wk3"/>
+                        <outlet property="slider" destination="XYa-Gj-huy" id="IFu-XT-kzb"/>
+                        <outlet property="valueLabel" destination="BzG-G7-neb" id="Udn-e7-64o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
