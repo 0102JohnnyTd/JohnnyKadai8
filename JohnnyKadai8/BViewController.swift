@@ -12,7 +12,7 @@ final class BViewController: UIViewController {
 
     @IBOutlet private weak var slider: UISlider!
 
-    @IBAction private func getSliderValue(_ sender: Any) {
+    @IBAction private func updateSliderValue(_ sender: Any) {
         showSliderValue()
         slidersData.saveValue(sliderValue: slider.value)
     }
