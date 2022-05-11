@@ -46,9 +46,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="slider" destination="yGB-3a-foU" id="24p-cU-0r5"/>
-                        <outlet property="sliderB" destination="yGB-3a-foU" id="vUZ-UF-xpe"/>
                         <outlet property="valueLabel" destination="OK8-4s-6jM" id="uT5-tu-O9X"/>
-                        <outlet property="valueLabelB" destination="OK8-4s-6jM" id="0om-fZ-Hmx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
