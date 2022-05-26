@@ -31,5 +31,6 @@ final class BViewController: UIViewController {
 
     private func showSliderValue() {
         valueLabel.text = "\(slider.value)"
+        print("Sourcetree挙動テストです")
     }
 }
